@@ -17,7 +17,7 @@ After kicking around some ideas about how I wanted the look and feel of this tit
 and 'token' count (the number of variable names, operators, etc.) of the PICO-8, I settled on something that felt a little
 more 'lively' than a simple 8-bit title.
 
-Since some of my favorite and most memorable gaming experiences came out of the 16-bit era, I knew
+Since some of my favorite and most memorable gaming experiences came out of the 16-bit era I knew
 I could look there to draw inspiration from some of my favorite titles. Understanding this would ultimately
 limit me in terms of sprite count (and force me to get really creative with the PICO-8's modest 16-color palette), I still felt like
 I could complete something that was worth while and expressive.
