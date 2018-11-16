@@ -13,7 +13,7 @@ For this project I'm going to be checking out [PICO-8](https://www.lexaloffle.co
 language. I've been spending the past couple days getting up to speed with the PICO-8 and am excited to see what
 comes of it.
 
-![](https://chadramsey.github.io/assets/images/2018/pico_8_gameoff.gif)
+![](https://chadramsey.github.io/assets/images/2018/pico_8_gameoff.gif){: .center-image }
 
 *"PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs."*
 
