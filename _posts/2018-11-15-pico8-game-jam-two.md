@@ -30,8 +30,9 @@ elements during the latter half of the month. These machanics were also importan
 *"Queue the 'I found some awesome game-progressing loot' number."*
 
 As with all games, establishing a system to handle screen and collision events was a must. I've also worked in a dialog system that makes rendering 
-event-based dialog pretty seamless. The scene elements (i.e., the flowers in this case), enemies, and player all operate on their own time cycles and are managed 
-independently each frame. 
+event-based dialog pretty seamless. The environmental elements (i.e., the flowers in this case), enemies, and player all operate on their own time cycles 
+and are managed independently each frame. There is also some simple enemy movement logic in place to keep the little green guys randomly moving along (they will also 
+follow you off-screen, which I'll get to in a second).
 
 Currently picking up this key and promping the dialog will hault all player and enemy movement until dismissed. All sprites have been
 hand drawn and I still continue to make tweaks to them regularly (I get lost in this process longer than I'd like to admit). To bring things home in the 
