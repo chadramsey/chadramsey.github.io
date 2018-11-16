@@ -15,7 +15,9 @@ If I'm being totally honest, I'm working out the details as I go - but isn't tha
 
 After kicking around some ideas about how I wanted the look and feel of this title to be, given the limited color palette
 and 'token' count (the number of variable names, operators, etc.) of the PICO-8, I settled on something that felt a little
-more 'lively' than a simple 8-bit title. Since some of my favorite and most memorable gaming experiences came out of the 16-bit era, I knew
+more 'lively' than a simple 8-bit title.
+
+Since some of my favorite and most memorable gaming experiences came out of the 16-bit era, I knew
 I could look there to draw inspiration from some of my favorite titles. Understanding this would ultimately
 limit me in terms of sprite count (and force me to get really creative with the PICO-8's modest 16-color palette), I still felt like
 I could complete something that was worth while and expressive.
@@ -25,11 +27,13 @@ elements during the latter half of the month. These machanics were also importan
 
 ![](https://chadramsey.github.io/assets/images/2018/akuma_key_grab_screen.gif)
 
-*"Queue the 'I found some awesome game-progressing loot' clip."*
+*"Queue the 'I found some awesome game-progressing loot' number."*
 
 As with all games, establishing a system to handle screen and collision events was a must. I've also worked in a dialog system that makes rendering 
 event-based dialog pretty seamless. The scene elements (i.e., the flowers in this case), enemies, and player all operate on their own time cycles and are managed 
-independently each frame. Currently picking up this key and promping the dialog will hault all player and enemy movement until dismissed. All sprites have been
+independently each frame. 
+
+Currently picking up this key and promping the dialog will hault all player and enemy movement until dismissed. All sprites have been
 hand drawn and I still continue to make tweaks to them regularly (I get lost in this process longer than I'd like to admit). To bring things home in the 
 'look and feel' department, I decided to work in a screen transistion mechanic once the player reaches the bounds of a given map area - much like you'd 
 see in many 16-bit era games.
