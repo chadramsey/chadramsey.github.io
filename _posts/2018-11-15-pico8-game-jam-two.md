@@ -27,9 +27,9 @@ elements during the latter half of the month. These machanics were also importan
 
 ![](https://chadramsey.github.io/assets/images/2018/akuma_key_grab_screen.gif){: .center-image }
 
-*"Queue the 'I found some awesome game-progressing loot' number."*
+*"Queue the 'I found some awesome game-progressing loot' tunage."*
 
-As with all games, establishing a system to handle screen and collision events was a must. I've also worked in a dialog system that makes rendering 
+As with all games establishing a system to handle screen and collision events was a must. I've also worked in a dialog system that makes rendering 
 event-based dialog pretty seamless. The environmental elements (i.e., the flowers in this case), enemies, and player all operate on their own time cycles 
 and are managed independently each frame. There is also some simple enemy movement logic in place to keep the little green guys randomly moving along (they will also 
 follow you off-screen, which I'll get to in a second).
@@ -41,7 +41,7 @@ see in many 16-bit era games.
 
 ![](https://chadramsey.github.io/assets/images/2018/akuma_transition_screen.gif){: .center-image }
 
-All of this so far exists as a test bed for the remainder of the game. I plan on taking a hard shift into creating a meaningful environment and putting all
+So far all of this exists as a test bed for the remainder of the project. I plan on taking a hard shift into creating a meaningful environment and putting all
 this to good use in the next couple weeks.
 
 There's still much work to be done and I'm tweaking and creating as I go, but I have to say I'm having a good time along the way. If nothing else I can
