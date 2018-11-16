@@ -5,6 +5,11 @@
 @charset "utf-8";
 
 $link-color: #4A4F53;
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
