@@ -23,7 +23,7 @@ and that we would really need to dig into the memory managment aspects of the PI
 environment spites we wanted to implement also became a challenge. Even with the support of an additional developer/artist, seeing this project to a state I 
 could be proud of didn't seem attainable. 
 
-Ultimately my ambitions were bigger than my limitations, and I learned that along the way. Something to keep in mind for the next game jam.
+Ultimately my ambitions were bigger than my limitations, and I learned that along the way - something to keep in mind for the next game jam.
 
 Having said that I am happy with the overall mechanics that are in place - and this *is* all in the spirit of open source - so I've decided to go ahead and make the
 source code for this project publically available in it's current state for anyone interested to expand upon or pull from. The only condition is that any future 
