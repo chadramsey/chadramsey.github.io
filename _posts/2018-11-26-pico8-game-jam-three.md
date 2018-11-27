@@ -8,7 +8,7 @@ It's only been about ten days since the last update, but I've decided to go ahea
 and where I see it heading.
 
 Since my last update I've added a basic attack mechanic (the ability to 'consume' souls, because demons), basic enemy collision,
-as well as health and soul tracking. My awesome wife [Corivanna](https://github.com/corivana) also had a helping hand in putting together 
+as well as health and soul tracking. My awesome wife [Corivana](https://github.com/corivana) also had a helping hand in putting together 
 some additional enemy and environment sprites in preparation for what would be the final push to completion. 
 
 ![](https://chadramsey.github.io/assets/images/2018/akuma_damage_soul.gif){: .center-image }
