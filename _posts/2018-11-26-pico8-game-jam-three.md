@@ -8,7 +8,7 @@ It's only been about ten days since the last update, but I've decided to go ahea
 and where I see it heading.
 
 Since my last update I've added a basic attack mechanic (the ability to 'consume' souls, because demons), basic enemy collision,
-as well as health and soul tracking. My awesome wife ![Corivanna](https://github.com/corivana) also had a helping hand in putting together 
+as well as health and soul tracking. My awesome wife [Corivanna](https://github.com/corivana) also had a helping hand in putting together 
 some additional enemy and environment sprites in preparation for what would be the final push to completion. 
 
 ![](https://chadramsey.github.io/assets/images/2018/akuma_damage_soul.gif){: .center-image }
@@ -26,7 +26,7 @@ However, I am happy with the overall mechanics that are in place - and this *is*
 source code for this project publically available in it's current state for anyone interested to expand upon or pull from. The only condition is that any future 
 iterations of the project remain open source and that sprites are not copied for use in other projects outside of this one.
 
-The project source can be found ![here](https://github.com/chadramsey/pico8-akuma) and I also have intentions on uploading the cartridge to lexaloffle later
+The project source can be found [here](https://github.com/chadramsey/pico8-akuma) and I also have intentions on uploading the cartridge to lexaloffle later
 this week for easy access. I'll update this post once that's done.
 
 I'm very happy with what I have been able to learn regarding the PICO-8 over the course of the past three weeks, and I've had a blast getting up to 
