@@ -15,15 +15,15 @@ some additional enemy and environment sprites in preparation for what would be t
 *"A basic attack mechanic that allows the player to 'consume' souls"*
 
 Then in the days following it slowly dawned on me that the PICO-8 was not the platform best suited for this project - what was initally endearing about its limitations became 
-a hindrance to the spirit of what we were trying to create, and rather than submit what would feel like an 'incomplete' project I've decided to make other plans for this project.
+a hindrance to the spirit of what we were trying to create, and rather than submit what would feel like an 'incomplete' project I've decided to make other plans for it instead.
 
 This isn't an attack on the PICO-8 as a platform - I still contest that its a fantastic tool for prototyping and even developing full-fledged
 experiences - but instead a realization that the 'mini-venture' we set out to create would simply take longer than the time allotted to get in a suitable state in time for the Game Off,
-and that we would really need to dig into the memory managment aspects of the PICO-8 in order to achieve the results we wanted to see. Currently the world map is incapable of spanning more than 4 transitions in any direction, and given that sprite and map data share the same space in memory, creating the 
+and that we would really need to dig into the memory managment aspects of the PICO-8 in order to achieve the results we wanted to see. Currently the world map is incapable of spanning more than 1 transition in any direction, and given that sprite and map data share the same space in memory, creating the 
 environment spites we wanted to implement also became a challenge. Even with the support of an additional developer/artist, seeing this project to a state I 
 could be proud of didn't seem attainable. 
 
-Ultimately my ambitions were bigger than my limitations, and I learned that along the way - something to keep in mind for the next game jam.
+Ultimately my ambitions were bigger than my limitations, and I learned that along the way - something to keep in mind for the next game jam: keep it simple.
 
 Having said that I am happy with the overall mechanics that are in place - and this *is* all in the spirit of open source - so I've decided to go ahead and make the
 source code for this project publically available in it's current state for anyone interested to expand upon or pull from. The only condition is that any future 
