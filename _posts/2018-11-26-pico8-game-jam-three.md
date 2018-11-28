@@ -37,3 +37,6 @@ speed with how one might approach the creation of their own top-down adventure u
 
 Perhaps we'll get the opportunity to see this vision through more completely in the future, with an expanded color palette and fewer limitations, 
 but in the mean time this has served as a great prototype of what may come.
+
+Update: You can preview the cartridge uploaded to lexaloffle below:
+<iframe src="/bbs/widget.php?pid=akuma-2" allowfullscreen width="621" height="513" style="border:none; overflow:hidden"></iframe>
