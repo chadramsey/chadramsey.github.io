@@ -39,4 +39,4 @@ Perhaps we'll get the opportunity to see this vision through more completely in 
 but in the mean time this has served as a great prototype of what may come.
 
 Update: You can preview the cartridge uploaded to lexaloffle below:
-<iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=akuma-2" allowfullscreen width="311" height="257" style="border:none; overflow:hidden"></iframe>
+<iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=akuma-2" allowfullscreen width="621" height="513" style="border:none; overflow:hidden"></iframe>
