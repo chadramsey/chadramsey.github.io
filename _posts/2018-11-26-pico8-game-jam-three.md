@@ -16,7 +16,7 @@ some additional enemy and environment sprites in preparation for what would be t
 
 Then in the days following it dawned on me that, for the elements I still had remaining on my 'to-do list', I didn't see myself being able to complete this project in a timely enough manner. Rather than submit what would feel like an 'incomplete' project I've decided to make other plans for it instead.
 
-To implement and smooth out the remaining elements, we would really need to dig into the memory managment aspects of the PICO-8 in order to achieve the results we wanted to see. Currently the world map is incapable of spanning more than 1 transition in any direction, and given that sprite and map data share the same space in memory, deciding on and creating the 
+To implement and smooth out the remaining elements, we would really need to dig into the memory managment aspects of the PICO-8 in order to achieve the results we wanted to see. Currently the world map is incapable of spanning more than one transition in any direction, and given that sprite and map data share the same space in memory, deciding on and creating the 
 environment assets we wanted to implement also became a challenge that we would need more to assess.
 
 Ultimately my ambitions were bigger than my limitations - something to keep in mind for the next game jam: keep it simple.
