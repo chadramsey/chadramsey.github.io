@@ -4,8 +4,7 @@ title: Game Off 2018 Update (2/2)
 date: 2018-11-26
 ---
 
-It's only been a few days since the last update, but I've decided to go ahead and comment on the overall status of this project
-and where I see it heading.
+It's only been a few days since the last update, but I've decided to go ahead and comment on the overall status of this project and where I see it heading.
 
 Since my last update I've added a basic attack mechanic (the ability to 'consume' souls, because demons), basic enemy collision,
 as well as health and soul tracking. My awesome wife [Corivana](https://github.com/corivana) also had a helping hand in putting together 
