@@ -23,4 +23,4 @@ With the basics covered, I want to address one more topic central to console emu
 
 This product also supports the ability to flash cartridges, allowing the ability to load your own ROMs onto a playable cartridge for the die-hard enthusiast who wants to see their creations running on actual NES hardware. For those interested in writing games for the NES, the [nesdev Wiki](https://wiki.nesdev.com/w/index.php/NES_reference_guide) is a great starting point, as well as the NES Programming guide [hosted on NintendoAge](http://nintendoage.com/forum/messageview.cfm?catid=22&threadid=7155).
 
-Next up I plan on diving into the CPU, and how the NES handles working with the compiled source code mentioned above. Stick around for Part 2.
+Next up I plan on diving into the CPU, and how the NES handles working with the compiled source code mentioned above.
