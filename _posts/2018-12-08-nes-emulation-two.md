@@ -4,7 +4,7 @@ title: A Journey in NES Emulation - Part 1
 date: 2018-12-08
 ---
 
-Writing an NES emulator has been a long time interest of mine, primarily because the subject of software emulation is facinating. I've spend my fair share of time studying how games are developed (from both modern and retro prospectives), but emulation is a completely different beast - an exercise in computer architecture dealing entirely in low-level components including precise hardware specifications and assembly code. Even for something we consider 'basic' by today's standards, the NES classics we all know and love are nothing short of technical masterpieces.
+Writing an NES emulator has been a long time interest of mine, primarily because the subject of software emulation is fascinating. I've spent my fair share of time studying how games are developed (from both modern and retro prospectives), but emulation is a completely different beast - an exercise in computer architecture dealing entirely in low-level components including precise hardware specifications and assembly code. Even for something we consider 'basic' by today's standards, the NES classics we all know and love are nothing short of technical masterpieces.
 
 ![](https://chadramsey.github.io/assets/images/2018/nes-emu-one.PNG){: .center-image }
 
