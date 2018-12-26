@@ -58,7 +58,7 @@ And so on - a standard ROM contains thousands of opcode sequences.
 
 You'll notice that 'cycles' are called out in this example as well. Keeping track of CPU cycle counts becomes directly relevant during synchronization with the PPU. which I plan on discussing in a future post. For now it's worth calling out that the PPU operates at 3 times the frquency of the CPU, so managing the timing between the two becomes crucial.
 
-### Memory Map
+### CPU Memory Map
 
 Since we're on the subject of discussing how the CPU operates, I want to also address on some of the core components of the CPU memory map. While the CPU on the NES only utilizes 2KB of RAM, it turns out the 6502 can actually reference up to 64KB of memory. 
 
