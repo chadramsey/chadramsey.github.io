@@ -60,7 +60,7 @@ You'll notice that 'cycles' are called out in this example as well. Keeping trac
 
 Since we're on the subject of discussing how the CPU operates, I want to also address on some of the core components of the CPU memory map. While the CPU on the NES only utilizes 2KB of RAM, it turns out the 6502 can actually reference up to 64KB of memory. 
 
-So what is going on with the rest of that space? The remaining address space is used for PPU, APU, and I/O registers, as well as cartridge space for handling program ROM/RAM and mappers. Even then, segments of CPU and PPU address space are mirrored on the NES, presumably to save on the cost it would have otherwise taken to physically account for the unused address space outside of what was designated. A visual representation of how this address space is allocated looks something like this (credit to [NintendoAge](http://nintendoage.com/forum/messageview.cfm?catid=22&threadid=4291)):
+So what is going on with the rest of that space? The remaining address space is used for PPU, APU, and I/O registers, as well as cartridge space for handling program ROM/RAM and mappers. Even then, segments of CPU and PPU address space are mirrored on the NES, presumably to save on the cost it would have otherwise taken to physically account for the unused address space outside of what was designated. A visual representation of how this address space is allocated looks like this (credit to [NintendoAge](http://nintendoage.com/forum/messageview.cfm?catid=22&threadid=4291)):
 
 ![](https://chadramsey.github.io/assets/images/2018/nes-emu-three.png){: .center-image }
 *"A visual representation of NES CPU address space."*
