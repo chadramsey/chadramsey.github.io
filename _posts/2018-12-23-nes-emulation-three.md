@@ -19,19 +19,7 @@ The CPU is in charge of translating compiled assemby code into actionable instru
 A string of opcode translations might look something like this:
 
 ```
-78d8 a900 8d00 20a2 (opcodes produced from compiled source code)
 
-78 -> SEI - Set Interrupt Disable (2 cycles)
-d8 -> CLD - Clear Decimal Mode (2 cycles)
-
-a9 -> LDA - Load Accumulator (2 cycles)
-00 -> BRK - Force Interrupt (7 cycles)
-
-d8 -> CLD - Clear Decimal Mode (2 cycles)
-00 -> BRK - Force Interrupt (7 cycles)
-
-20 -> JSR - Jump to Subroutine (6 cycles)
-a2 -> LDX - Load X Register (2 cycles)
 ```
 
 And so on - a standard ROM contains thousands of opcode sequences.
