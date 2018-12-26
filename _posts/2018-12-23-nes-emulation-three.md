@@ -54,7 +54,7 @@ And so on - a standard ROM contains thousands of opcode sequences.
 
 A 6502 disassembler such as [dcc6502](https://github.com/tcarmelveilleux/dcc6502) can help in manually breaking down and analyzing these opcode sequences to understand them a bit better.
 
-You'll notice that 'cycles' are called out in this example as well. Keeping track of CPU cycle counts becomes directly relevant during synchronization with the PPU. which I plan on discussing in a future post. For now it's worth calling out that the PPU operates at 3 times the frquency of the CPU, so managing the timing between the two becomes crucial.
+You'll notice that 'cycles' are called out in this example as well. Keeping track of CPU cycle counts becomes directly relevant during synchronization with the PPU (which I plan on discussing in a future post). For now it's worth calling out that the PPU operates at 3 times the frquency of the CPU, so managing the timing between the two becomes crucial.
 
 ### CPU Memory Map
 
