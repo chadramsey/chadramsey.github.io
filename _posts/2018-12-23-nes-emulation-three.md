@@ -33,28 +33,29 @@ Depending on the opcode being read in, these segments are interpreted differentl
 If we take the first line of opcodes above and regroup them based on their addressing mode, their execution would look like this:
 
 ```
-78 d8 a900 8d0020 a2ff 9a ad0220 2980 ... (the first line of opcodes, regrouped to match their addressing mode)
-
-78 -> SEI - Set Interrupt Disable (2 cycles)
-
-d8 -> CLD - Clear Decimal Mode (2 cycles)
-
-a9 00 -> LDA - Load Accumulator (value $00; 2 cycles)
-
-8d 0020 -> STA - Store Accumulator (in address space $2000; 4 cycles)
-
-a2 ff -> LDX - Load X Register (value $FF; 2 cycles)
-
-9a -> TXS - Transfer X to Stack Pointer (2 cycles)
-
-ad 0220 -> LDA - Load Accumulator (in address space $2002; 4 cycles)
-
-29 80 -> AND - Logical AND (value $80; 2 cycles)
-
+78 d8 a900 8d0020 a2ff 9a ad0220 2980 ... (the first line of opcodes, regrouped based on their addressing mode)
+|	|	|	  |		|	|	 |	  |
+|	|	|	  |		|	|	 |    + - 29 80 -> AND - Logical AND (value $80; 2 cycles)
+|	|	|	  |		|	|	 |
+|	|	|	  |		|	|	 + ------ ad 0220 -> LDA - Load Accumulator (in address space $2002; 4 cycles)
+|	|	|	  |		|	|
+|	|	|	  |		|	+ ----------- 9a -> TXS - Transfer X to Stack Pointer (2 cycles)
+|	|	|	  |		|
+|	|	|	  |		+ --------------- a2 ff -> LDX - Load X Register (value $FF; 2 cycles)
+|	|	|	  |
+|	|	|	  + --------------------- 8d 0020 -> STA - Store Accumulator (in address space $2000; 4 cycles)
+|	|	|
+|	|	+ --------------------------- a9 00 -> LDA - Load Accumulator (value $00; 2 cycles)
+|	|
+|	+ ------------------------------- d8 -> CLD - Clear Decimal Mode (2 cycles)
+|
++ ----------------------------------- 78 -> SEI - Set Interrupt Disable (2 cycles)
 ...
 ```
 
 And so on - a standard ROM contains thousands of opcode sequences.
+
+A 6502 disassembler such as [dcc6502](https://github.com/tcarmelveilleux/dcc6502) can help in manually breaking down and analyzing these opcode sequences to understand them a bit better.
 
 You'll notice that 'cycles' are called out in this example as well. Keeping track of CPU cycle counts becomes directly relevant during synchronization with the PPU. which I plan on discussing in a future post. For now it's worth calling out that the PPU operates at 3 times the frquency of the CPU, so managing the timing between the two becomes crucial.
 

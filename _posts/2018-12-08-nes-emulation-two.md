@@ -14,7 +14,13 @@ Secondly, I haven't taken on this project without huge support from existing pro
 
 Right out of the gate I was interested in how an emulator could take compiled assembly code and translate that to pixels on a screen. Even having spent some time working through the process, I'm still completely fascinated by the orchestration of it all. Simply put, the compiled source code is represented as nothing more than a series of HEX values - each value signaling a processor directive that, as a whole, make up the instruction set for a given title.
 
-![](https://chadramsey.github.io/assets/images/2018/nes-emu-two.PNG){: .center-image }
+```
+4e45 531a 0800 1100 0000 4e49 2031 2e33
+a51f c915 b021 a512 2910 f016 a000 84d1
+84bb 84b7 84b8 a5ff 29fc 85ff a91b 851f
+d005 20bc c1a5 1f20 7cc2 7180 d080 f980
+2c81 4281 0981 4d81 6381 8281 d181 6e80
+```
 *"The first few lines of compiled source code for 'Metroid'."*
 
 Since hardware acceleration and other low level bindings aren't completely necessary to achieve acceptable emulation for the NES on modern hardware, I decided to forgo using a cross-platform library such as [SDL](https://www.libsdl.org/) in place of a basic JFrame implementation as a first pass rendering solution. This implementation renders a new 'frame' as a BufferedImage and displays the contents within the JFrame, although I've found that the timing isn't perfect and is almost entirely based on the performace of the underlying CPU. I plan on discussing how these frames are composed in more detail when I get around to discussing the PPU, or picture processing unit (effectively the 'graphics processor' of the NES).
