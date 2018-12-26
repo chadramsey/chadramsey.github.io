@@ -8,18 +8,23 @@ With the [last post](https://chadramsey.github.io/nes-emulation-two/) covering a
 
 The NES CPU is based on the widly used [6502 microprocessor](https://en.wikipedia.org/wiki/MOS_Technology_6502) (as seen in the Apple II and Commodore 64), manufactured by Ricoh as the 2A03 and 2A07 microprocessor to accomodate for NTSC and PAL television systems, respectfully. 
 
-What are NTSC and PAL? These two formats exist because analog television systems around the globe hold different standards for color encoding and refresh rate based on their region - at the time, many western countries used NTSC while most eastern countries adhered PAL. In order for the NES to accommodate for these differing standards, two variations of the CPU had to be manufactured, but aside from these modifications the processors are otherwise identical. 
+What are NTSC and PAL? These two formats exist because analog television systems around the globe hold different standards for color encoding and refresh rate based on their region - at the time, many western countries used NTSC while most eastern countries adhered PAL. 
 
-The CPU runs at a 1.79 MHz on the NTSC variant, and 1.66 MHz on the PAL variant, and houses 2KB of internal RAM. In addition, the CPU also handles processing for audio and controller I/O - all within the same chip.
+In order for the NES to accommodate for these differing standards, two variations of the CPU had to be manufactured, but aside from these modifications the processors are otherwise identical. The CPU runs at a 1.79 MHz on the NTSC variant, and 1.66 MHz on the PAL variant, and houses 2KB of internal RAM. In addition, the CPU also handles processing for audio and controller I/O - all within the same chip.
 
 So how does the CPU start working with our games?
 
 The CPU is in charge of translating compiled assemby code into actionable instructions based on the 6502's [instruction set](http://obelisk.me.uk/6502/reference.html). Once a ROM is loaded, the emulator initializes the program by determining the 'starting point', called the reset vector. Once the reset vector is determined the CPU reads in and processes the subsequent instructions which make up the mechanics of the game. One of the most laborious tasks in coming up with an emulator is transforming these instructions (also referred to as 'opcodes' in their compiled, byte-represented form) into their respective software-based implementations. The 6502 contains instructions for up to 256 unique opcodes, but of these 256 opcodes only 151 are offically supported.
 
-A string of opcode translations might look something like this:
+A set of opcode translations might look something like this:
 
 ```
-
+78 -> SEI - Set Interrupt Disable (2 cycles)
+d8 -> CLD - Clear Decimal Mode (2 cycles)
+a9 -> LDA - Load Accumulator (2 cycles)
+00 -> BRK - Force Interrupt (7 cycles)
+20 -> JSR - Jump to Subroutine (6 cycles)
+a2 -> LDX - Load X Register (2 cycles)
 ```
 
 And so on - a standard ROM contains thousands of opcode sequences.
