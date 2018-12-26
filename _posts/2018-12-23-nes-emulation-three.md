@@ -31,7 +31,7 @@ Depending on the opcode being read in, these segments are interpreted differentl
 If we take the first line of opcodes above and regroup them based on their addressing mode, their execution would look like this:
 
 ```
-78 - d8 - a900 - 8d0020 - a2ff - 9a - ad0220 - 2980 (the first line of opcodes, regrouped according to their addressing mode)
+78 - d8 - a900 - 8d0020 - a2ff - 9a - ad0220 - 2980 (the first line of opcodes, regrouped based on their addressing mode)
 
 1.) 78 -> SEI - Set Interrupt Disable (2 cycles)
 
