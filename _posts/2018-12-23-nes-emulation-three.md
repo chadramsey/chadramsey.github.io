@@ -31,6 +31,7 @@ d8 -> CLD - Clear Decimal Mode (2 cycles)
 20 -> JSR - Jump to Subroutine (6 cycles)
 a2 -> LDX - Load X Register (2 cycles)
 ```
+*"A sample of opcode to instruction set translations."*
 
 And so on - a standard ROM contains thousands of opcode sequences.
 
