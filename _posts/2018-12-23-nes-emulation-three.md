@@ -7,7 +7,7 @@ date: 2018-12-23
 With the [last post](https://chadramsey.github.io/nes-emulation-two/) covering a brief overview of the project as a whole, I want to start discussing some of the more detailed subject matter surrounding the NES, starting with the CPU. 
 
 
-#### NTSC/PAL
+### NTSC/PAL
 The NES CPU is based on the widly used [6502 microprocessor](https://en.wikipedia.org/wiki/MOS_Technology_6502) (as seen in the Apple II and Commodore 64), manufactured by Ricoh as the 2A03 and 2A07 microprocessor to accomodate for NTSC and PAL television systems, respectfully. 
 
 What are NTSC and PAL? These two formats exist because analog television systems around the globe hold different standards for color encoding and refresh rate based on their region - at the time, many western countries used NTSC while most eastern countries adhered PAL. 
@@ -16,7 +16,7 @@ In order for the NES to accommodate for these differing standards, two variation
 
 So how does the CPU start working with our games?
 
-#### Working with Opcodes
+### Working with Opcodes
 
 The CPU is in charge of translating compiled assemby code into actionable instructions based on the 6502's [instruction set](http://obelisk.me.uk/6502/reference.html). Once a ROM is loaded, the emulator initializes the program by determining the 'starting point', called the reset vector. Once the reset vector is determined the CPU reads in and processes the subsequent instructions which make up the mechanics of the game. One of the most laborious tasks in coming up with an emulator is transforming these instructions (also referred to as 'opcodes' in their compiled, byte-represented form) into their respective software-based implementations. The 6502 contains instructions for up to 256 unique opcodes, but of these 256 opcodes only 151 are offically supported.
 
@@ -58,7 +58,7 @@ And so on - a standard ROM contains thousands of opcode sequences.
 
 You'll notice that 'cycles' are called out in this example as well. Keeping track of CPU cycle counts becomes directly relevant during synchronization with the PPU. which I plan on discussing in a future post. For now it's worth calling out that the PPU operates at 3 times the frquency of the CPU, so managing the timing between the two becomes crucial.
 
-#### CPU Memory Map
+### CPU Memory Map
 
 Since we're on the subject of discussing how the CPU operates, I want to also address on some of the core components of the CPU memory map. While the CPU on the NES only utilizes 2KB of RAM, it turns out the 6502 can actually reference up to 64KB of memory. 
 
