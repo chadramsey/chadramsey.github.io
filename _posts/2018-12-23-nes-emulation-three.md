@@ -7,7 +7,7 @@ date: 2018-12-23
 With the [last post](https://chadramsey.github.io/nes-emulation-two/) covering a brief overview of the project as a whole, I want to start discussing some of the more detailed subject matter surrounding the NES, starting with the CPU. 
 
 
-### Overview
+### CPU Overview
 The NES CPU is based on the widly used [6502 microprocessor](https://en.wikipedia.org/wiki/MOS_Technology_6502) (as seen in the Apple II and Commodore 64), manufactured by Ricoh as the 2A03 and 2A07 microprocessor to accomodate for NTSC and PAL television systems, respectfully. The NTSC and PAL formats exist because analog television systems around the globe hold different standards for color encoding and refresh rate based on their region - at the time, many western countries used NTSC while most eastern countries adhered to PAL. 
 
 In order for the NES to accommodate these differing standards, two variations of the CPU had to be manufactured, but aside from these modifications the processors are otherwise identical. The CPU runs at a 1.79 MHz on the NTSC variant, and 1.66 MHz on the PAL variant, and houses 2KB of internal RAM. In addition, the CPU also handles processing for audio and controller I/O.
