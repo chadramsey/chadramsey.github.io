@@ -22,15 +22,35 @@ The CPU is in charge of translating compiled assemby code into actionable instru
 
 If a ROM file is opened in a text editor, the opcodes are represented in 16, 2-byte segments, looking something like this:
 
-
-![](https://chadramsey.github.io/assets/images/2018/nes-emu-five.PNG){: .center-image }
+```
+78d8 a900 8d00 20a2 ff9a ad02 2029 80f0
+f9ad 0220 2980 f0f9 09ff 8d00 808d 00a0
+```
 *"Opcodes produced from compiled source code."*
 
 Depending on the opcode being read in, these segments are interpreted differently. For instance, some opcodes may act implicitly (meaning that it executes on its own, without an operand), while others may require an operand ranging from 8 to 16 bits. Some opcodes also support multiple [addressing modes](http://www.obelisk.me.uk/6502/addressing.html#IMP), which add utility and allow them to be used in different ways.
 
 If we take the first line of opcodes above and regroup them based on their addressing mode, their execution would look like this:
 
-![](https://chadramsey.github.io/assets/images/2018/nes-emu-four.PNG){: .center-image }
+```
+78 - d8 - a900 - 8d0020 - a2ff - 9a - ad0220 - 2980 (the first line of opcodes, regrouped to match their addressing mode)
+
+78 -> SEI - Set Interrupt Disable (2 cycles)
+
+d8 -> CLD - Clear Decimal Mode (2 cycles)
+
+a9 00 -> LDA - Load Accumulator (value $00; 2 cycles)
+
+8d 0020 -> STA - Store Accumulator (in address space $2000; 4 cycles)
+
+a2 ff -> LDX - Load X Register (value $FF; 2 cycles)
+
+9a -> TXS - Transfer X to Stack Pointer (2 cycles)
+
+ad 0220 -> LDA - Load Accumulator (in address space $2002; 4 cycles)
+
+29 80 -> AND - Logical AND (value $80; 2 cycles)
+```
 
 And so on - a standard ROM contains thousands of opcode sequences.
 

@@ -18,8 +18,7 @@ Right out of the gate I was interested in how an emulator could take compiled as
 4e45 531a 0800 1100 0000 4e49 2031 2e33
 a51f c915 b021 a512 2910 f016 a000 84d1
 84bb 84b7 84b8 a5ff 29fc 85ff a91b 851f
-d005 20bc c1a5 1f20 7cc2 7180 d080 f980
-2c81 4281 0981 4d81 6381 8281 d181 6e80
+...
 ```
 *"The first few lines of compiled source code for 'Metroid'."*
 
