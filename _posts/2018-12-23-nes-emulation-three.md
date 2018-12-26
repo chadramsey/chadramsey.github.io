@@ -12,7 +12,7 @@ The NES CPU is based on the widly used [6502 microprocessor](https://en.wikipedi
 
 What are NTSC and PAL? These two formats exist because analog television systems around the globe hold different standards for color encoding and refresh rate based on their region - at the time, many western countries used NTSC while most eastern countries adhered PAL. 
 
-In order for the NES to accommodate for these differing standards, two variations of the CPU had to be manufactured, but aside from these modifications the processors are otherwise identical. The CPU runs at a 1.79 MHz on the NTSC variant, and 1.66 MHz on the PAL variant, and houses 2KB of internal RAM. In addition, the CPU also handles processing for audio and controller I/O - all within the same chip.
+In order for the NES to accommodate these differing standards, two variations of the CPU had to be manufactured, but aside from these modifications the processors are otherwise identical. The CPU runs at a 1.79 MHz on the NTSC variant, and 1.66 MHz on the PAL variant, and houses 2KB of internal RAM. In addition, the CPU also handles processing for audio and controller I/O.
 
 So how does the CPU start working with our games?
 
@@ -58,7 +58,7 @@ And so on - a standard ROM contains thousands of opcode sequences.
 
 You'll notice that 'cycles' are called out in this example as well. Keeping track of CPU cycle counts becomes directly relevant during synchronization with the PPU. which I plan on discussing in a future post. For now it's worth calling out that the PPU operates at 3 times the frquency of the CPU, so managing the timing between the two becomes crucial.
 
-### CPU Memory Map
+### Memory Map
 
 Since we're on the subject of discussing how the CPU operates, I want to also address on some of the core components of the CPU memory map. While the CPU on the NES only utilizes 2KB of RAM, it turns out the 6502 can actually reference up to 64KB of memory. 
 
