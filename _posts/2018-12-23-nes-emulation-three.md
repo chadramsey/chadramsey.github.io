@@ -12,9 +12,7 @@ In order for the NES to accommodate for these differing standards, two variation
 
 So how does the CPU start working with our games?
 
-The CPU is in charge of translating compiled assemby code into actionable instructions based on the 6502's [instruction set](http://obelisk.me.uk/6502/reference.html). Once a ROM is loaded, the emulator initializes the program by determining the 'starting point', called the reset vector. Once the reset vector is determined the CPU reads in and processes the subsequent instructions which make up the mechanics of the game. 
-
-One of the most laborious tasks in coming up with an emulator is transforming these instructions (also referred to as 'opcodes' in their compiled, byte-represented form) into their respective software-based implementations. The 6502 contains instructions for up to 256 unique opcodes, but of these 256 opcodes only 151 are offically supported.
+The CPU is in charge of translating compiled assemby code into actionable instructions based on the 6502's [instruction set](http://obelisk.me.uk/6502/reference.html). Once a ROM is loaded, the emulator initializes the program by determining the 'starting point', called the reset vector. Once the reset vector is determined the CPU reads in and processes the subsequent instructions which make up the mechanics of the game. One of the most laborious tasks in coming up with an emulator is transforming these instructions (also referred to as 'opcodes' in their compiled, byte-represented form) into their respective software-based implementations. The 6502 contains instructions for up to 256 unique opcodes, but of these 256 opcodes only 151 are offically supported.
 
 A string of opcode translations might look something like this:
 
@@ -33,7 +31,6 @@ d8 -> CLD - Clear Decimal Mode (2 cycles)
 20 -> JSR - Jump to Subroutine (6 cycles)
 a2 -> LDX - Load X Register (2 cycles)
 ```
-*"A sample of opcode to instruction set translations."*
 
 And so on - a standard ROM contains thousands of opcode sequences.
 
