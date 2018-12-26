@@ -28,4 +28,3 @@ Next up I plan on diving into the CPU, and how the NES handles working with the 
 kNES can be found [on my GitHub page](https://github.com/chadramsey/knes). 
 This emulator is very much still in its infancy and published primarily to 
 get the ball rolling on documentation and community support.
-Feedback is certainly welcome.
