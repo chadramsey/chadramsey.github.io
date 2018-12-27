@@ -43,7 +43,7 @@ If we take the first line of opcodes above and regroup them based on their addre
 8.) 29 80 -> AND - Logical AND (value $80; 2 cycles)
 ```
 
-And so on - a standard ROM contains thousands of opcode sequences.
+And so on - a standard ROM contains hundreds of opcode sequences.
 
 A 6502 disassembler such as [dcc6502](https://github.com/tcarmelveilleux/dcc6502) can help in manually breaking down and analyzing these opcode sequences to understand them a bit better.
 
