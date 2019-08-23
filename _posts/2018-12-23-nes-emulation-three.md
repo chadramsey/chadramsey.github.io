@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: A Journey in NES Emulation - Part 2
+title: A Journey in NES Emulation - Part II
 date: 2018-12-23
 ---
 
