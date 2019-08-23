@@ -60,9 +60,9 @@ So what is going on with the rest of that space? The remaining address space is 
 
 A well documented breakdown of how this address space is mapped can be found at the [nesdev Wiki](https://wiki.nesdev.com/w/index.php/CPU_memory_map). 
 
-There are a mind boggling number details surrounding the CPU, and this post only scratches the surface regarding some of the basics. Fortunally, [the nesdev Wiki](https://wiki.nesdev.com/w/index.php/CPU#Sections) covers all of this information in painstaking detail.
+The CPU is highly intricate, and this post only scratches the surface. Fortunally, [the nesdev Wiki](https://wiki.nesdev.com/w/index.php/CPU#Sections) covers all of these intricacies in painstaking detail.
 
-Next up I plan on discussing how the CPU and PPU work together to display graphics to the screen.
+Next up I plan on discussing how the CPU and PPU work together to display graphics on the screen.
 
 
 kNES can be found [on my GitHub page](https://github.com/chadramsey/knes). 
