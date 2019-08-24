@@ -8,10 +8,7 @@ It's only been a few days since the last update, but I've decided to go ahead an
 
 Since my last update I've added a basic attack mechanic (the ability to 'consume' souls, because demons), basic enemy collision,
 as well as health and soul tracking. [My awesome wife](https://github.com/corivana) also had a helping hand in putting together 
-some additional enemy and environment sprites in preparation for the final push to completion. 
-
-![](https://chadramsey.github.io/assets/images/2018/akuma_damage_soul.gif){: .center-image }
-*"A basic attack mechanic that allows the player to 'consume' souls"*
+some additional enemy and environment sprites in preparation for the final push to completion.
 
 In the days following it dawned on me that, for the elements I still had remaining on my to-do list, I didn't see myself being able to complete this project in a timely enough manner. Rather than submit what would feel like an 'incomplete' project I've decided to make other plans for it instead.
 
@@ -33,4 +30,4 @@ Perhaps we'll get the opportunity to see this vision through more completely in 
 but in the mean time this has served as a great prototype of what may come.
 
 Update: You can preview the cartridge uploaded to lexaloffle below:
-<iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=akuma-2" allowfullscreen width="621" height="513" style="border:none; overflow:hidden"></iframe>
+<iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=akuma-5" allowfullscreen width="621" height="513" style="border:none; overflow:hidden"></iframe>
