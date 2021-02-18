@@ -18,7 +18,7 @@ The setup for this project involved the use of a breadboard and jump wires to co
 ![](https://chadramsey.github.io/assets/images/2021/mpu6050-interface.png){: .center-image }
 
 ### Cool, But Why?
-An accelerometer has many applications, but for this particular application we're going to discuss bicycles. The pitch I recited to myself was simply, "Wouldn't it be interesting if bikes included an accelerometer?" Bicycles are dynamic machines, frequently pivoting in coordinate space. What kind of information could we derive from a rider if we had this data? A few thoughts included the potenial for unique insights into coaching and progress building through analysis of rider and bike dynamics, product development and testing through use of 3D modeling software, or the potential for integrated safety features such as crash detection (the measure of an accelerated force in a given direction).
+An accelerometer has many applications - for this particular application we're going to discuss bicycles. The initial pitch was simply, "Wouldn't it be interesting if bikes included an accelerometer?" Bicycles are dynamic machines, frequently pivoting in coordinate space. What kind of information could we derive from a rider if we had this data? A few thoughts included the potenial for unique insights into coaching and progress building through analysis of rider and bike dynamics, product development and testing through use of 3D modeling software, or the potential for integrated safety features such as crash detection (the measure of an accelerated force in a given direction).
 
 ### Hardware Interfacing
 Now that I've covered the 'why', let's cover the technical implementation. With our hardwire configuration wired up we need to write some code to read the analog data produced from the accelerometer. The Raspberry Pi has libraries to help interface with the GPIO pins, but rather than spending time reinventing the wheel I discovered [a Python module](https://github.com/m-rtijn/mpu6050) that effectively gets right to the point of abstracting the low level communication between the MPU6050 chipset and the Raspberry Pi. All that was left to do was to import this module within my own Python script and make use of the data.
@@ -29,7 +29,7 @@ sensor = mpu6050(0x68)
 accelerometer_data = sensor.get_accel_data() # Get the current X, Y and Z coordinates from the accelerometer
 ```
 
-The Python script imports the necessary module, instantiates the sensor based on its I2C address, and pulls the coordinate data from the accelerometer. Tilts in the X-axis represent leaning the bike left or right, while tilts in the Y-axis represent an incline or decline (or a wheelie or stoppie when measured in short durations).
+The Python script imports the necessary module, instantiates the sensor based on its I2C address, and pulls the coordinate data from the accelerometer. Tilts in the X-axis represent leaning the bike left or right, while tilts in the Y-axis represent an incline or decline (or a wheelie/stoppie when measured in short durations). Once the script is running, the breadboard holding the accelerometer can be picked up and rotated to produce feedback.
 
 ![](https://chadramsey.github.io/assets/images/2021/python-accel.gif){: .center-image }
 
@@ -41,6 +41,9 @@ For this proof of concept I wanted to distribute the data as close to real time 
 ![](https://chadramsey.github.io/assets/images/2021/demo.gif){: .center-image }
 
 *"Connection to the websocket server via JavaScript shows the real time data stream from Python"*
+
+### Further Implementation
+Now that the data is being accepted by the websocket server, the sky is the limit. The server can further parse the coordinate data being passed in and be analyzed to form patterns for the use cases above (and more!). This kind of shared coordinate data might also be used in game development to transform game objects in real time (let's get some wheelies up in Zwift).
 
 ### Final Thoughts
 This project was interesting to work through on a number of levels. Dusting off the Raspberry Pi to work on another hardware-based project reminded me why I've made a career of development - it's exciting to brainstorm concepts and see how far they can be taken. While it's easy to get caught up in the day-to-day tasks of development, taking the time to conceptualize the ideas rolling around in mind keeps the craft interesting.
