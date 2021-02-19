@@ -31,7 +31,7 @@ sensor = mpu6050(0x68)
 accelerometer_data = sensor.get_accel_data() # Get the current X, Y and Z coordinates from the accelerometer
 ```
 
-The Python script imports the necessary module, instantiates the sensor based on its I2C address, and pulls the coordinate data from the accelerometer. Tilts in the X-axis represent leaning the bike left or right, while tilts in the Y-axis represent an incline or decline (or a wheelie/stoppie when measured in short durations). Once the script is running, the breadboard holding the accelerometer can be picked up and rotated to produce feedback.
+The Python script imports the necessary module, instantiates the sensor based on its [I2C](https://learn.sparkfun.com/tutorials/i2c/all) address, and pulls the coordinate data from the accelerometer. Tilts in the X-axis represent leaning the bike left or right, while tilts in the Y-axis represent an incline or decline (or a wheelie/stoppie when measured in short durations). Once the script is running, the breadboard holding the accelerometer can be picked up and rotated to produce feedback.
 
 ![](https://chadramsey.github.io/assets/images/2021/python-accel.gif){: .center-image }
 
