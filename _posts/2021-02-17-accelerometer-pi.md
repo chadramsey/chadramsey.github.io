@@ -4,7 +4,7 @@ title: An Experiment in Accelerometers, the Raspberry Pi, and Web Technology
 date: 2021-02-17
 ---
 
-Once a quarter my place of work grants our teams a 'day of autonomy' to work on any projects we see fit to grow our knowledge and development skill set. For this day of autonomy I decided to take an idea that was outside the box (or, outside the barn) and see how far I could run with a hardware-based project using the Raspberry Pi, an accelerometer and the power of the web.
+Once a quarter my place of work grants our teams a 'day of autonomy' to work on any projects we see fit to grow our knowledge and development skill set. For this day of autonomy I decided to take an idea that was outside the box (or, outside the barn) and see how far I could run with a hardware-based project using the [Raspberry Pi](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/), an accelerometer and the power of the web.
 
 ### What's an Accelerometer?
 First thing's first, what's an accelerometer and what does it do? In short an accelerometer is a chipset capible of detecting orientation on an x, y, and z axis by measuring the acceleration forces applied to it. Your smart phone uses an accelerometer to determine its orientation to trigger screen rotation. The chipset itself will only run you a few dollars and looks something like this:
