@@ -17,6 +17,8 @@ The setup for this project involved the use of a breadboard and jump wires to co
 
 ![](https://chadramsey.github.io/assets/images/2021/mpu6050-interface.png){: .center-image }
 
+*"The pin diagram for the MPU6050 and the Raspberry Pi's GPIO pins."*
+
 ### Cool, But Why?
 An accelerometer has many applications. For this particular application we're going to discuss bicycles. The initial pitch was simply, "Wouldn't it be interesting if bikes included an accelerometer?" Bicycles are dynamic machines, frequently pivoting in coordinate space. What kind of information could we derive from a rider if we had this data? A few thoughts included the potenial for unique insights into coaching and progress building through analysis of rider and bike dynamics, product development and testing through use of 3D modeling software, or the potential for integrated safety features such as crash detection (the measure of an accelerated force in a given direction).
 
