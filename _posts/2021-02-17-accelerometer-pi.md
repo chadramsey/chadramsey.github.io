@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: From Silicon to the Web
+title: An Experiment in Accelerometers, the Raspberry Pi, and Web Technology
 date: 2021-02-17
 ---
 
