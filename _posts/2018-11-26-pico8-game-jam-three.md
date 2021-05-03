@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Game Off 2018 Update (2/2)
+title: Game Off 2018 Update - Part II
 date: 2018-11-26
 ---
 
